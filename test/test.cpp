@@ -119,7 +119,7 @@ void searchData() {
 		cin >> nim;
 		Node* currentNode = START;
 		while (currentNode != NULL) {
-			if (currentNode->noMhs -- nim) {
+			if (currentNode->noMhs == nim) {
 				cout << "NIM: " << currentNode->noMhs << ", Nama: " << currentNode->name << endl;
 				return;
 			}
@@ -160,7 +160,7 @@ int main() {
 					system("cls");
 					break;
 				}
-				
+
 				int nim;
 				cout << "Masukan NIM: ";
 				cin >> nim;
@@ -172,7 +172,7 @@ int main() {
 				else
 					cout << "Data Tidak Ditemukan" << endl;
 				break;
-			
+
 			case 3:
 				traverse();
 				break;
@@ -184,3 +184,13 @@ int main() {
 			default:
 				cout << "Pilihan tidak ada" << endl;
 				break;
+			}
+		}
+		catch (exception e)
+		{
+			cout << "Terjadi kesalahan" << endl;
+		}
+
+	} while (pilihan != 5);
+
+}
