@@ -106,7 +106,17 @@ void traverse() {
 
 }
 
-
+void searchData() {
+	if (listEmpty()) {
+		cout << "List Kosong" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+	else {
+		int nim 
+	}
+}
 
 
 
